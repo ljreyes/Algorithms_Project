@@ -20,15 +20,12 @@ public class Menu {
         } catch (Exception e){
             option = -1; 
             }
-            switch(option)
-            {
-                case 0: System.out.println("\nGoodbye!"); break;
-                case 1: DFS(); break;
-                case 2: BFS(); break;
-                case 3: Prims(); break;
-                default: System.out.println("Invalid Option!"); break;
-
-
+            switch (option) {
+                case 0 -> System.out.println("\nGoodbye!");
+                case 1 -> DFS();
+                case 2 -> BFS();
+                case 3 -> Prims();
+                default -> System.out.println("Invalid Option!");
             }
         }
         while (option != 0);
@@ -38,7 +35,7 @@ public class Menu {
     }
     public static void DFS()
     {
-        System.out.println("This is the DFS Method");
+        System.out.println("This is the algorithms.DFS Method");
         Scanner inputDFS = new Scanner(System.in);
         int n;
         System.out.print("\nPlease enter the number of elements you want: ");
